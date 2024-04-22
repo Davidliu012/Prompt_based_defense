@@ -138,8 +138,8 @@ def main():
     false_df = pd.DataFrame(normal_data)
 
     # Export labeled data to CSV files
-    true_df.to_csv('attack_data_en.csv', index=False)
-    false_df.to_csv('normal_data_en.csv', index=False)
+    true_df.to_csv('GPT_labeled_dataset/attack_data_en.csv', index=False)
+    false_df.to_csv('GPT_labeled_dataset/normal_data_en.csv', index=False)
 
     print("Data labeling and export completed successfully.")
 

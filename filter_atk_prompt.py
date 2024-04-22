@@ -27,7 +27,7 @@ for data in json_data:
 print(len(data_with_attack))
 
 # Write to CSV
-with open('output_en_attack.csv', 'w') as file:
+with open('human_labeled_dataset/attack_data_en.csv', 'w') as file:
     writer = csv.writer(file)
     writer.writerow(['filename', 'user', 'assistant'])
     for data in data_with_attack:
